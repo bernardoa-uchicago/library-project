@@ -7,8 +7,8 @@ def find_book(book_name, library_list):
         if item.name == book_name:
                 index = i
                 return index
-    return False
-    
+    return -1
+
 def search_book(book_name, library_list):
     for item in library_list:
         if item.name == book_name:

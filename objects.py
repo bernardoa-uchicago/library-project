@@ -1,7 +1,7 @@
 class book:
 
     def __init__(self, path):
-        self.name = path[6:-4]
+        self.name = str.lower(path[6:-4])
         self.path = path
 
     def set_name(self, name):
@@ -37,5 +37,5 @@ class library:
         string = "Books:"
         for book in self.book_list:
             string = string + "\n" + str(book.name)
-        return string + "\n"
+        return "\n" + string + "\n"
 
